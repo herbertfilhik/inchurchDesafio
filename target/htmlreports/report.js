@@ -1,4 +1,12 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("inscricao.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Realizar Inscrição para Eventos da inchurch",
+  "description": "\nCenario: 01 - Criar login para o cliente realizar inscrição\nDado que o que cliente acesse o site para inscrição\nE realize o cadastro no site\n|ticket |nome       |fone        |cpf        |\n|1\t    |alvaro dias|11-4444-2222|78534769818|\n|0\t    |alvaro dias|11-4444-2222|78534769818|\n|1\t    |!@#$%ˆ\u0026*()_|11-4444-2222|78534769818|\n|9999   |alvaro dias|11-4444-2222|78534769818|\n|1\t    |alvaro dias|!@#$%ˆ\u0026*()__|78534769818|\n|1\t    |alvaro dias|11-4444-2222|11122233344|\n|1 \t    |alvaro dias|11-4444-2222|!@#$%ˆ\u0026*()!|\n|10 \t  |alvaro dias|11-4444-2222|68484027880|\nE realiza validacao dos dados para efetivar o cadastro do cliente\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\nEntao deve ser gerado um login para o cliente\n\nCenario: 02 - Realizar login\nDado que o cliente esteja cadastrado\nE esteja no site\nE informa usuario e senha\nEntao deve acessar o sistema\n\nCenario: 03 - Tentar realizar login com usuario invalido ou inexistente\nDados que nao exista o cliente na base\nE esteja no site\nE informa usuario e senha invalidos ou inexistentes\nEntao o sistema devera informar que o usuario eh inexistente ou invalido\n\nCenario: 04 - Realizar pagamento para o evento com cartao de credito\nDado que o cliente esteja cadastrado na base\nE esteja no site\nE realiza o login\nE esteja no carrinho de compras\nE seleciona o meio de pagamento CARTAO\nE informa os dados de pagamento\n|cartao          |bandeira|dtexpiracao|cvv|nome           |\n|4556302487225856|visa    |09/21      |907|antonieta souza|\n|5330991798089462|master  |07/21      |765|jose santos    |\n|xxxxxxxxxxxxxxxx|error   |xx/ss      |123|!@#$%ˆ\u0026*((     |\nE valida se o meio de pagamento eh valido\nEntao realiza pagamento e retorna voucher para o cliente\n\nCenario: 05 - Realizar pagamento para o evento com boleto\nDado que o cliente esteja cadastrado na base\nE esteja no site\nE realiza o login\nE esteja no carrinho de compras\nE seleciona o meio de pagamento BOLETO\nEntao o sistema deve gerar o boleto para pagamento e disponibilizar ao cliente\n|boleto            |dataVencimento              |\n|valido            |dentro da data de vencimento|\n|valido            |fora da data de vencimento  |\n|invalido          |dentro da data de vencimento|\n|valido segunda via|dentro da data de vencimento|\t\t\n|valido segunda via|fora da data de vencimento  |\t\t\t\t\nEntao o cliente deve realizar o pagamento\nEntao o sistema valida se o pagamento foi realizado de acordo com as politicas financeiras da empresa\nEntao se o pagamento foi realizado com sucesso o sistema disponibiliza o voucher ao cliente",
+  "id": "realizar-inscrição-para-eventos-da-inchurch",
+  "keyword": "Feature"
+});
+formatter.uri("login.feature");
 formatter.feature({
   "line": 1,
   "name": "Login",
@@ -7,11 +15,11 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 326045129,
+  "duration": 367201000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 43805,
+  "duration": 51820,
   "status": "passed"
 });
 formatter.scenario({
@@ -41,29 +49,29 @@ formatter.match({
   "location": "LoginSteps.i_am_on_inchurch_site()"
 });
 formatter.result({
-  "duration": 7027373644,
+  "duration": 8965153498,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.i_search_for_Entrar_como_visitante()"
 });
 formatter.result({
-  "duration": 79260041,
-  "error_message": "org.openqa.selenium.WebDriverException: TypeError: rect is undefined\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027herberts-MacBook-Pro.local\u0027, ip: \u00272804:431:c7e0:6c73:1d00:5a67:9ac0:e885%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.5\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 28100, moz:profile: /var/folders/7t/pcfjnxqn27s..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.5.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 804d1e33-8ab6-874a-b841-65c0c8017aa9\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\n\tat org.openqa.selenium.interactions.Actions.perform(Actions.java:595)\n\tat stepdefinitions.inchurch.LoginSteps.i_search_for_Entrar_como_visitante(LoginSteps.java:43)\n\tat ✽.When I search for Entrar como visitante(login.feature:5)\n",
-  "status": "failed"
+  "duration": 6509811933,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.i_should_make_login_on_system()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 4428850256,
+  "duration": 28538259215,
   "status": "passed"
 });
 formatter.after({
-  "duration": 25823,
+  "duration": 2437589154,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 26910,
   "status": "passed"
 });
 formatter.uri("user.feature");
@@ -75,11 +83,11 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 178866722,
+  "duration": 142361551,
   "status": "passed"
 });
 formatter.before({
-  "duration": 17914,
+  "duration": 30155,
   "status": "passed"
 });
 formatter.scenario({
@@ -109,29 +117,29 @@ formatter.match({
   "location": "UserSteps.i_am_on_inchurch_site()"
 });
 formatter.result({
-  "duration": 10759508153,
+  "duration": 9660060426,
   "status": "passed"
 });
 formatter.match({
   "location": "UserSteps.inputdatafornewuser()"
 });
 formatter.result({
-  "duration": 6514257777,
+  "duration": 6492896152,
   "status": "passed"
 });
 formatter.match({
   "location": "UserSteps.insertregisteronthebase()"
 });
 formatter.result({
-  "duration": 28846297600,
+  "duration": 28843197303,
   "status": "passed"
 });
 formatter.after({
-  "duration": 581130992,
+  "duration": 586097737,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20549,
+  "duration": 48711,
   "status": "passed"
 });
 });
