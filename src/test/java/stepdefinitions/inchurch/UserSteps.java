@@ -20,7 +20,7 @@ import cucumber.api.java.en.When;
 
 public class UserSteps {
 	Faker faker = new Faker();
-	private long time = 3000;
+	private long time = 5000;
 	private String name = faker.name().fullName();
 	private String emailNovoUsuario = faker.internet().safeEmailAddress();
 	private String senha = faker.internet().password();

@@ -17,7 +17,7 @@ import cucumber.api.java.en.When;
 public class LoginSteps {
 	private String email = "desafio@qa.inchurch.com";
 	private String password = "qainchurch";
-	private long time = 3000;
+	private long time = 5000;
 
 	@Before
 	public void beforeScenario() {

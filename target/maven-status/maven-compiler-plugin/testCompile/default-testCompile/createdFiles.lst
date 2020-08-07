@@ -1,0 +1,8 @@
+core/Propriedades.class
+configuration/RunnerTest.class
+core/DriverFactory$1.class
+core/BaseTest.class
+stepdefinitions/inchurch/UserSteps.class
+core/DriverFactory.class
+core/Propriedades$Browsers.class
+stepdefinitions/inchurch/LoginSteps.class

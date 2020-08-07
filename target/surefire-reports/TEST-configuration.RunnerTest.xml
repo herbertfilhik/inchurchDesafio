@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="configuration.RunnerTest" time="3.066" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="configuration.RunnerTest" time="1.908" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib"/>
@@ -26,7 +26,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/herbert/projetos_herbert/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf9027338666524196792.tmp"/>
+    <property name="classworlds.conf" value="/Users/herbert/projetos_herbert/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2725062997058859289.tmp"/>
     <property name="jansi.force" value="true"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/herbert/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -64,12 +64,12 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Scenario: Login to inchurch site and validate the user name" name="Given I am on inchurch site" time="0.003"/>
+  <testcase classname="Scenario: Login to inchurch site and validate the user name" name="Given I am on inchurch site" time="0.002"/>
   <testcase classname="Scenario: Login to inchurch site and validate the user name" name="When I search for Entrar como visitante" time="0"/>
   <testcase classname="Scenario: Login to inchurch site and validate the user name" name="Then I should make login on system and validate the user name" time="0"/>
-  <testcase classname="Scenario: Login to inchurch site and validate the user name" name="Scenario: Login to inchurch site and validate the user name" time="2.467"/>
+  <testcase classname="Scenario: Login to inchurch site and validate the user name" name="Scenario: Login to inchurch site and validate the user name" time="1.331"/>
   <testcase classname="Scenario: Create a new user for inchurch" name="Given I am on inchurch site to create a user" time="0"/>
   <testcase classname="Scenario: Create a new user for inchurch" name="When I search for Entrar como visitante to open option and input data for new user" time="0"/>
   <testcase classname="Scenario: Create a new user for inchurch" name="Then I must be inform data to insert register on the base" time="0"/>
-  <testcase classname="Scenario: Create a new user for inchurch" name="Scenario: Create a new user for inchurch" time="0.596"/>
+  <testcase classname="Scenario: Create a new user for inchurch" name="Scenario: Create a new user for inchurch" time="0.575"/>
 </testsuite>
