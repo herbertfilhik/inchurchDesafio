@@ -7,11 +7,11 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 349296894,
+  "duration": 367746859,
   "status": "passed"
 });
 formatter.before({
-  "duration": 45171,
+  "duration": 53844,
   "status": "passed"
 });
 formatter.scenario({
@@ -41,29 +41,29 @@ formatter.match({
   "location": "LoginSteps.i_am_on_inchurch_site()"
 });
 formatter.result({
-  "duration": 7492207400,
+  "duration": 12861489811,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.i_search_for_Entrar_como_visitante()"
 });
 formatter.result({
-  "duration": 6518119942,
+  "duration": 6590520275,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.i_should_make_login_on_system()"
 });
 formatter.result({
-  "duration": 28598947345,
+  "duration": 28559773802,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1422238021,
+  "duration": 2457828836,
   "status": "passed"
 });
 formatter.after({
-  "duration": 24118,
+  "duration": 27151,
   "status": "passed"
 });
 formatter.uri("user.feature");
@@ -75,11 +75,11 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 182151879,
+  "duration": 135090163,
   "status": "passed"
 });
 formatter.before({
-  "duration": 41799,
+  "duration": 17689,
   "status": "passed"
 });
 formatter.scenario({
@@ -109,29 +109,29 @@ formatter.match({
   "location": "UserSteps.i_am_on_inchurch_site()"
 });
 formatter.result({
-  "duration": 9715943515,
+  "duration": 10886301801,
   "status": "passed"
 });
 formatter.match({
   "location": "UserSteps.inputdatafornewuser()"
 });
 formatter.result({
-  "duration": 6485187621,
+  "duration": 6485709897,
   "status": "passed"
 });
 formatter.match({
   "location": "UserSteps.insertregisteronthebase()"
 });
 formatter.result({
-  "duration": 28890845252,
+  "duration": 28832090778,
   "status": "passed"
 });
 formatter.after({
-  "duration": 605608234,
+  "duration": 2440119649,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13150,
+  "duration": 19140,
   "status": "passed"
 });
 });
